@@ -9,8 +9,10 @@ terraform {
 provider "azurerm" {
   features {}
   # set this to false when running locally
-  use_oidc = true 
+  use_oidc = true
 }
+
+provider "azuread" {}
 
 data "azurerm_kubernetes_cluster" "default" {
   depends_on          = [module.test_aks] # refresh cluster state before reading

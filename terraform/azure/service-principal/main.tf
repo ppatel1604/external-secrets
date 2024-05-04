@@ -4,7 +4,7 @@ resource "azuread_application" "current" {
 }
 
 resource "azuread_service_principal" "current" {
-  application_id               = azuread_application.current.application_id
+  client_id                    = azuread_application.current.client_id
   app_role_assignment_required = false
   owners                       = var.application_owners
   feature_tags {
@@ -18,7 +18,7 @@ resource "azuread_service_principal_password" "current" {
 }
 
 resource "azuread_application_federated_identity_credential" "example" {
-  application_object_id = azuread_application.current.object_id
+  application_id        = azuread_application.current.id
   display_name          = var.application_display_name
   audiences             = var.audiences
   issuer                = var.issuer
