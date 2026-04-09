@@ -19,7 +19,7 @@
       
       
       <link rel="icon" href="../../pictures/eso-round-logo.svg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -2908,6 +2908,8 @@
       
         
       
+        
+      
     
     
     
@@ -3240,34 +3242,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../provider/device42/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Device42
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../provider/google-secrets-manager/" class="md-nav__link">
         
   
@@ -3464,34 +3438,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../provider/alibaba/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Alibaba Cloud
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../provider/gitlab-variables/" class="md-nav__link">
         
   
@@ -3556,6 +3502,34 @@
     
   
     Oracle Vault
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../provider/ovhcloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OVHcloud
   
 
     
@@ -4144,6 +4118,62 @@
     
   
     ngrok
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../provider/devolutions-server/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Devolutions Server
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../provider/nebius-mysterybox/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nebius MysteryBox
   
 
     
@@ -5167,6 +5197,10 @@ be transformed and saved as a <code>Kind=Secret</code>:</p>
 <span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kubernetes.io/dockerconfigjson</span><span class="w"> </span><span class="c1"># or TLS...</span>
 
 <span class="w">      </span><span class="nt">metadata</span><span class="p">:</span>
+<span class="w">        </span><span class="c1"># Labels and annotations to set on the Secret.</span>
+<span class="w">        </span><span class="c1"># When a template is defined, these replace the default behavior</span>
+<span class="w">        </span><span class="c1"># of copying labels and annotations from the ExternalSecret.</span>
+<span class="w">        </span><span class="c1"># Set to an empty map ({}) to prevent any labels or annotations from being copied.</span>
 <span class="w">        </span><span class="nt">annotations</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{}</span>
 <span class="w">        </span><span class="nt">labels</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{}</span>
 <span class="w">        </span><span class="c1"># The finalizers will be added to the Secret.</span>
